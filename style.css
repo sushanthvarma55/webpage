@@ -1,0 +1,154 @@
+@import "fonts.css";
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(255, 255, 255);
+
+}
+
+#main{
+    display: flex;
+}
+#img-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrap-img{
+    padding: 20px;
+}
+#image{
+    border-radius:20px ;
+    max-width: 45vw;
+    height: 90vh;
+    object-fit: cover;
+
+}
+#tribute-info #tribute-links ul li{
+    list-style: none;
+}
+#tribute-info #tribute-links ul{
+    display: flex;
+    padding: 20px;
+    float: right;
+}
+#tribute-links ul li a{
+    padding: 10px;
+}
+#tribute-info .info{
+padding:2% 9% 2% 5%;
+}
+#tribute-info .info h2{
+    font-size: 48px;
+    padding-bottom: .4em;
+}
+.info{
+    font-size: 16px;
+    font-weight:400 ;
+}
+#tribute-links ul li a img{
+    width: 20px;
+}
+#tribute-links ul li a img{
+    opacity: .6;
+
+}
+
+#tribute-links ul li a img:hover{
+    opacity: 1;
+    transition:all 90ms ease-in;
+
+}
+
+.capsi{
+    padding: 0 5%;
+    display: flex;
+    position: relative;
+}
+.capsi #sign{
+    position: absolute;
+    right: 0%;
+    padding: 3% 4%;
+}
+.caption{
+    font-size: 24px;
+    font-weight: 300;
+}
+#img-caption p{
+    font-style: italic;
+}
+@media screen and (max-width:768px) {
+
+
+        /* body{display: none;} */
+        #main{
+            display: flex;
+            flex-direction: column;
+        }
+        
+      #img-div::before{
+          content: "Charliechaplin";
+          font-weight: 700;
+          font-size: 36px;
+          text-align: center;
+    }
+
+      #image{
+        max-width: 395px;
+        height:380px ;
+        border-radius: 12px;
+
+        object-fit: cover;
+      }
+      .wrap-img{
+          padding-top: 1px;
+          padding-bottom: 0;
+      }
+      #img-caption{
+        font-size: 10px;
+        color: rgb(255, 255, 255);
+        font-style: italic;
+        position: absolute;
+        bottom: 30%;
+        right: 10%;
+
+      }
+
+      #tribute-info #tribute-links ul{
+          display: flex;
+          flex-direction: column;
+          padding: 10px;
+          list-style: none;
+          position: fixed;
+          right: 0%;
+
+      }
+      #tribute-info #tribute-links ul li a img{
+          width: 16px;
+      }
+
+    .info h2{
+        display: none;
+    }
+    .capsi{
+        position: relative;
+        padding: 0 0 0 25px;
+    }
+    .capsi .caption{
+
+        padding-bottom: 30px;
+    }
+    .capsi #sign{
+        position: absolute;
+        width: 220px;
+        right: 25px;
+        padding-bottom: 50px;
+    }
+
+
+}
